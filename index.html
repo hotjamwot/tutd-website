@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turn Up Turn Down</title>
+  <link rel="icon" type="image/png" href="img/assets/tutd-logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="img/assets/tutd-logo.png" alt="Turn Up Turn Down logo" class="logo">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-img-section">
+      <img src="img/gallery/hero-image.jpg" alt="Waihi Beach Home" class="hero-img-full">
+    </section>
+    <section id="home" class="hero">
+      <h1>Turn Up Turn Down</h1>
+      <p class="slogan handwritten">Taking the hard work out of your holiday</p>
+      <div class="intro-wrap">
+        <p class="intro">Premium concierge-style service for Waihi Beach holiday homes. We prepare your bach before arrival and close it down after departure, so you can relax and enjoy your time away.</p>
+        <a href="#contact" class="cta">Get your bach ready the easy way</a>
+      </div>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card" data-service="turnup">
+          <img src="img/assets/tutd-logo.png" alt="Turn Up Package">
+          <h3>Turn Up Package</h3>
+          <p>From $150</p>
+        </div>
+        <div class="service-card" data-service="turndown">
+          <img src="img/assets/tutd-logo.png" alt="Turn Down Package">
+          <h3>Turn Down Package</h3>
+          <p>From $400</p>
+        </div>
+        <div class="service-card" data-service="fullhouse">
+          <img src="img/assets/tutd-logo.png" alt="Full House Package">
+          <h3>Full House Package</h3>
+          <p>$650</p>
+        </div>
+        <div class="service-card" data-service="addons">
+          <img src="img/assets/tutd-logo.png" alt="Add-ons">
+          <h3>Add-ons</h3>
+          <p>Grocery, alcohol, flowers & more</p>
+        </div>
+      </div>
+      <!-- Popups for services -->
+      <div id="popup-overlay" class="hidden"></div>
+      <div id="popup-turnup" class="popup hidden">
+        <h3>Turn Up Package — from $150</h3>
+        <ul>
+          <li>Prepare your home for arrival</li>
+          <li>Air out house & open windows</li>
+          <li>Switch on fridge and hot water</li>
+          <li>Tidy surfaces & light vacuum</li>
+          <li>Beds made with fresh linen (provided by you)</li>
+          <li>Heating/air con turned on if requested</li>
+          <li>Outdoor furniture set up</li>
+        </ul>
+      </div>
+      <div id="popup-turndown" class="popup hidden">
+        <h3>Turn Down Package — from $400</h3>
+        <ul>
+          <li>Close down your home after departure</li>
+          <li>Strip beds & start laundry</li>
+          <li>Clean kitchen & bathrooms</li>
+          <li>Take out rubbish & recycling</li>
+          <li>Lock up & secure property</li>
+        </ul>
+      </div>
+      <div id="popup-fullhouse" class="popup hidden">
+        <h3>Full House Package — $650</h3>
+        <ul>
+          <li>Includes both Turn Up & Turn Down services</li>
+          <li>Full clean, setup, and close down</li>
+          <li>Perfect for busy owners or special occasions</li>
+        </ul>
+      </div>
+      <div id="popup-addons" class="popup hidden">
+        <h3>Add-ons</h3>
+        <ul>
+          <li>Grocery shop ($50 + goods)</li>
+          <li>Alcohol shop ($50 + goods)</li>
+          <li>Charcuterie board (price varies)</li>
+          <li>Fresh flower arrangement (~$120)</li>
+          <li>Birthday/event setup (from $100)</li>
+          <li>Swap gas bottles ($20 + bottle)</li>
+        </ul>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>We’re Waihi Beach locals who know what it takes to make your holiday home feel special. Trusted by bach owners for our attention to detail, reliability, and warm, friendly service.</p>
+    </section>
+    <section id="gallery">
+      <div class="gallery-bar">
+        <img src="img/gallery/tutd-gallery-1.jpg" alt="Gallery image" class="gallery-bar-img" id="mainGalleryImg">
+        <div class="gallery-thumbnails">
+          <img src="img/gallery/tutd-gallery-1.jpg" class="gallery-thumb active" data-idx="0" alt="Thumb 1">
+          <img src="img/gallery/tutd-gallery-2.jpg" class="gallery-thumb" data-idx="1" alt="Thumb 2">
+          <img src="img/gallery/tutd-gallery-3.jpg" class="gallery-thumb" data-idx="2" alt="Thumb 3">
+          <img src="img/gallery/tutd-gallery-4.jpg" class="gallery-thumb" data-idx="3" alt="Thumb 4">
+          <img src="img/gallery/tutd-gallery-5.jpg" class="gallery-thumb" data-idx="4" alt="Thumb 5">
+          <img src="img/gallery/tutd-gallery-6.jpg" class="gallery-thumb" data-idx="5" alt="Thumb 6">
+          <img src="img/gallery/tutd-gallery-7.jpg" class="gallery-thumb" data-idx="6" alt="Thumb 7">
+          <img src="img/gallery/tutd-gallery-8.jpg" class="gallery-thumb" data-idx="7" alt="Thumb 8">
+          <img src="img/gallery/tutd-gallery-9.jpg" class="gallery-thumb" data-idx="8" alt="Thumb 9">
+          <img src="img/gallery/tutd-gallery-10.jpg" class="gallery-thumb" data-idx="9" alt="Thumb 10">
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-minimal">
+        <h2>Contact</h2>
+        <div class="contact-owner">Sophie Wilson</div>
+        <a href="tel:+64226030879" class="contact-phone">+64 22 603 0879</a>
+        <a href="mailto:hello@turnupturndown.co.nz?subject=Turn%20Up%20Turn%20Down%20Enquiry" class="contact-btn-minimal">Email me!</a>
+        <div class="contact-message">Looking forward to hearing from you!</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Turn Up Turn Down. All rights reserved.</p>
+  </footer>
+  <script>
+    // Gallery bar with thumbnails
+    const galleryImages = [
+      'img/gallery/tutd-gallery-1.jpg',
+      'img/gallery/tutd-gallery-2.jpg',
+      'img/gallery/tutd-gallery-3.jpg',
+      'img/gallery/tutd-gallery-4.jpg',
+      'img/gallery/tutd-gallery-5.jpg',
+      'img/gallery/tutd-gallery-6.jpg',
+      'img/gallery/tutd-gallery-7.jpg',
+      'img/gallery/tutd-gallery-8.jpg',
+      'img/gallery/tutd-gallery-9.jpg',
+      'img/gallery/tutd-gallery-10.jpg'
+    ];
+    let galleryIndex = 0;
+    const galleryImg = document.getElementById('mainGalleryImg');
+    const thumbs = document.querySelectorAll('.gallery-thumb');
+    function showGalleryImage(idx) {
+      galleryImg.style.opacity = 0.5;
+      setTimeout(() => {
+        galleryImg.src = galleryImages[idx];
+        galleryImg.style.opacity = 1;
+      }, 120);
+      thumbs.forEach((thumb, i) => {
+        thumb.classList.toggle('active', i === idx);
+      });
+      galleryIndex = idx;
+    }
+    thumbs.forEach((thumb, idx) => {
+      thumb.addEventListener('click', () => showGalleryImage(idx));
+    });
+    // Popup logic (unchanged)
+    const serviceCards = document.querySelectorAll('.service-card');
+    const popups = {
+      turnup: document.getElementById('popup-turnup'),
+      turndown: document.getElementById('popup-turndown'),
+      fullhouse: document.getElementById('popup-fullhouse'),
+      addons: document.getElementById('popup-addons')
+    };
+    const overlay = document.getElementById('popup-overlay');
+    serviceCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.getAttribute('data-service');
+        if (popups[key]) {
+          overlay.classList.remove('hidden');
+          popups[key].classList.remove('hidden');
+        }
+      });
+    });
+    overlay.addEventListener('click', () => {
+      overlay.classList.add('hidden');
+      Object.values(popups).forEach(popup => popup.classList.add('hidden'));
+    });
+  </script>
+</body>
+</html>
