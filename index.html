@@ -8,34 +8,46 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pacifico&family=Radley&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav>
-      <img src="img/assets/tutd-logo.png" alt="Turn Up Turn Down logo" class="logo">
-      <ul>
+      <ul class="nav-menu" id="navMenu">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about-me">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <section class="hero-header">
+      <div class="hero-header-content">
+        <img src="img/assets/tutd-logo.png" alt="Turn Up Turn Down logo" class="hero-logo">
+        <div class="hero-title">
+          <span>turn up</span><br>
+          <span>turn down</span>
+        </div>
+      </div>
+      <p class="slogan handwritten">Taking the hard work out of your holiday</p>
+    </section>
     <section class="hero-img-section">
       <img src="img/gallery/hero-image.jpg" alt="Waihi Beach Home" class="hero-img-full">
     </section>
-    <section id="home" class="hero">
-      <h1>Turn Up Turn Down</h1>
-      <p class="slogan handwritten">Taking the hard work out of your holiday</p>
-      <div class="intro-wrap">
-        <p class="intro">Premium concierge-style service for Waihi Beach holiday homes. We prepare your bach before arrival and close it down after departure, so you can relax and enjoy your time away.</p>
-        <a href="#contact" class="cta">Get your bach ready the easy way</a>
+    <section class="hero-static-testimonial">
+      <div class="testimonial-text">
+        “Sophie made our holiday so much easier. Everything was perfect when we arrived!”<br><span class="testimonial-author">– Hayden J. Weal, Waihi Beach</span>
       </div>
     </section>
-    <section id="services">
+    <section id="home" class="hero">
+      <div class="intro-wrap">
+        <p class="intro">Premium concierge-style service for Waihi Beach holiday homes. We prepare your bach before arrival and close it down after departure, so you can relax and enjoy your time away.</p>
+        <a href="#contact" class="btn">Get your bach ready the easy way</a>
+      </div>
+    </section>
+    <section id="services" class="section-container">
       <h2>Our Services</h2>
       <div class="services-grid">
         <div class="service-card" data-service="turnup">
@@ -77,18 +89,22 @@
         <h3>Turn Down Package — from $400</h3>
         <ul>
           <li>Close down your home after departure</li>
-          <li>Strip beds & start laundry</li>
+          <li>Full clean of house</li>
+          <li>Beds stripped, sheets washed and beds made</li>
           <li>Clean kitchen & bathrooms</li>
-          <li>Take out rubbish & recycling</li>
+          <li>Fridge and freezer emptied of any perishable goods</li>
+          <li>Rubbish taken out and bins brought back in</li>
+          <li>Outdoor furniture put away</li>
           <li>Lock up & secure property</li>
         </ul>
       </div>
       <div id="popup-fullhouse" class="popup hidden">
         <h3>Full House Package — $650</h3>
         <ul>
-          <li>Includes both Turn Up & Turn Down services</li>
-          <li>Full clean, setup, and close down</li>
-          <li>Perfect for busy owners or special occasions</li>
+          <li>Both Turn Up and Turn Down packages</li>
+          <li>Grocery shop (costs of goods additional)</li>
+          <li>Alcohol shop (cost of goods additional)</li>
+          <li>Fresh flower arrangement</li>
         </ul>
       </div>
       <div id="popup-addons" class="popup hidden">
@@ -100,15 +116,39 @@
           <li>Fresh flower arrangement (~$120)</li>
           <li>Birthday/event setup (from $100)</li>
           <li>Swap gas bottles ($20 + bottle)</li>
+          <li>BBQ clean ($50)</li>
+          <li>Oven clean ($50)</li>
         </ul>
       </div>
     </section>
-    <section id="about">
-      <h2>About</h2>
-      <p>We’re Waihi Beach locals who know what it takes to make your holiday home feel special. Trusted by bach owners for our attention to detail, reliability, and warm, friendly service.</p>
+    <section id="contact" class="section-container">
+      <div class="contact-minimal">
+        <h2>Contact</h2>
+        <div class="contact-owner">Sophie Wilson</div>
+        <a href="tel:+64226030879" class="contact-phone">+64 22 603 0879</a>
+        <a href="mailto:hello@turnupturndown.co.nz?subject=Turn%20Up%20Turn%20Down%20Enquiry" class="btn" target="_blank" rel="noopener">Email me!</a>
+        <div class="about-me-text">I'm always available to meet clients in person before performing my services to facilitate trust as I'm going into your home. I can travel to Tauranga, Hamilton or Auckland and pick up keys, etc.
+        </div>
+      </div>
+    </section>
+    <section id="about-me" class="section-container">
+      <h2>About Me</h2>
+      <div class="about-me-content">
+        <img src="img/assets/sophie-bio-pic.jpg" alt="Sophie Wilson" class="about-me-img">
+        <div class="about-me-text">
+          <p>Hello! I'm Sophie, the face behind Turn Up Turn Down. I moved to Waihi at the start of 2025 with my partner Jon. Originally from Te Awamutu, I'm a small-town girl at heart and absolutely love being part of close-knit communities.</p>
+          <p>By trade, I'm an anaesthetic technician and still contract in Auckland when needed—but Waihi is now home. When I'm not working, you'll find me playing a bit of tennis or playing in the Matamata Brass Band.</p>
+          <p>Turn Up Turn Down was born from my love of helping people and my appreciation for a well-prepared, stress-free holiday. I'm here to take care of the little things so you can focus on enjoying your time away. I'm excited to meet more of the amazing locals and bach owners in the area and look forward to helping make your time at the beach effortless and welcoming.</p>
+        </div>
+      </div>
     </section>
     <section id="gallery">
       <div class="gallery-bar">
+        <div class="gallery-testimonial-overlay" id="galleryTestimonialOverlay">
+          <div class="testimonial-text" id="testimonialText">
+            “Turn Up Turn Down made our holiday so easy. The house was spotless and welcoming!”<br><span class="testimonial-author">– Alex, Auckland</span>
+          </div>
+        </div>
         <img src="img/gallery/tutd-gallery-1.jpg" alt="Gallery image" class="gallery-bar-img" id="mainGalleryImg">
         <div class="gallery-thumbnails">
           <img src="img/gallery/tutd-gallery-1.jpg" class="gallery-thumb active" data-idx="0" alt="Thumb 1">
@@ -124,21 +164,12 @@
         </div>
       </div>
     </section>
-    <section id="contact">
-      <div class="contact-minimal">
-        <h2>Contact</h2>
-        <div class="contact-owner">Sophie Wilson</div>
-        <a href="tel:+64226030879" class="contact-phone">+64 22 603 0879</a>
-        <a href="mailto:hello@turnupturndown.co.nz?subject=Turn%20Up%20Turn%20Down%20Enquiry" class="contact-btn-minimal">Email me!</a>
-        <div class="contact-message">Looking forward to hearing from you!</div>
-      </div>
-    </section>
   </main>
   <footer>
     <p>&copy; 2025 Turn Up Turn Down. All rights reserved.</p>
   </footer>
   <script>
-    // Gallery bar with thumbnails
+    // Gallery bar with thumbnails and testimonials
     const galleryImages = [
       'img/gallery/tutd-gallery-1.jpg',
       'img/gallery/tutd-gallery-2.jpg',
@@ -151,14 +182,30 @@
       'img/gallery/tutd-gallery-9.jpg',
       'img/gallery/tutd-gallery-10.jpg'
     ];
+    const testimonials = [
+      "Turn Up Turn Down made our holiday so easy. The house was spotless and welcoming!<br><span class='testimonial-author'>– Alex, Auckland</span>",
+      "Sophie went above and beyond. The fresh flowers and charcuterie board were a lovely touch!<br><span class='testimonial-author'>– Jess, Hamilton</span>",
+      "Arriving to a warm, clean bach was such a treat. Highly recommend!<br><span class='testimonial-author'>– Mike & Sarah, Tauranga</span>",
+      "The Turn Down service was a lifesaver after a busy weekend. Thank you!<br><span class='testimonial-author'>– Emma, Waihi Beach</span>",
+      "We loved the attention to detail. Will definitely use again.<br><span class='testimonial-author'>– The Smith Family</span>",
+      "Sophie is so friendly and professional. Everything was perfect.<br><span class='testimonial-author'>– Rachel, Auckland</span>",
+      "The add-ons made our stay feel extra special. Thank you!<br><span class='testimonial-author'>– Ben, Cambridge</span>",
+      "So easy and stress-free. Our bach was ready to enjoy.<br><span class='testimonial-author'>– Anna, Wellington</span>",
+      "The best service for busy bach owners!<br><span class='testimonial-author'>– Tom, Waihi Beach</span>",
+      "Everything was sparkling clean and ready for us.<br><span class='testimonial-author'>– Grace, Auckland</span>"
+    ];
     let galleryIndex = 0;
     const galleryImg = document.getElementById('mainGalleryImg');
     const thumbs = document.querySelectorAll('.gallery-thumb');
+    const testimonialText = document.getElementById('testimonialText');
     function showGalleryImage(idx) {
       galleryImg.style.opacity = 0.5;
+      testimonialText.style.opacity = 0.5;
       setTimeout(() => {
         galleryImg.src = galleryImages[idx];
         galleryImg.style.opacity = 1;
+        testimonialText.innerHTML = testimonials[idx % testimonials.length];
+        testimonialText.style.opacity = 1;
       }, 120);
       thumbs.forEach((thumb, i) => {
         thumb.classList.toggle('active', i === idx);
